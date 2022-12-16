@@ -32,3 +32,14 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## TO DO
+
+- Create a Form component with a label, field and button
+- Create a dummy data file
+- Program the form to handle the data
+- Route the form to go to a result page
+- Display some data on the result page
+- Add unit testing
+- Look at props/types/typescript best practises
+- Documentation
