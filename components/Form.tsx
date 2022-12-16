@@ -1,6 +1,8 @@
 import { useState, ChangeEvent, MouseEvent } from "react";
+import Router, { useRouter } from "next/router";
 
 const Form = () => {
+  const router = useRouter();
   const [name, setName] = useState("");
 
   const onChange = (e: ChangeEvent<HTMLInputElement>) => {
@@ -15,11 +17,13 @@ const Form = () => {
     console.log(
       "take the onChange value stored in local state and route to results"
     );
+    router.push("/results");
   };
   return (
     <div>
       <label>Name:</label>
       <input onChange={onChange} />
+
       <button onClick={onClick}>submit</button>
     </div>
   );
