@@ -1,11 +1,17 @@
+import { useState, ChangeEvent, MouseEvent } from "react";
+
 const Form = () => {
-  const onChange = () => {
+  const [name, setName] = useState("");
+
+  const onChange = (e: ChangeEvent<HTMLInputElement>) => {
     console.log(
       "input change to be stored in local state and sent to results component"
     );
+    setName(e.target.value);
   };
 
-  const onClick = () => {
+  const onClick = (e: MouseEvent<HTMLButtonElement>) => {
+    e.preventDefault();
     console.log(
       "take the onChange value stored in local state and route to results"
     );
@@ -14,7 +20,7 @@ const Form = () => {
     <div>
       <label>Name:</label>
       <input onChange={onChange} />
-      <button onClick={onclick}>submit</button>
+      <button onClick={onClick}>submit</button>
     </div>
   );
 };
