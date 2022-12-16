@@ -1,5 +1,5 @@
 import { useState, ChangeEvent, MouseEvent } from "react";
-import { useRouter } from "next/router";
+import Router, { useRouter } from "next/router";
 
 const Form = () => {
   const router = useRouter();
@@ -15,13 +15,11 @@ const Form = () => {
 
   const onClick = (e: MouseEvent<HTMLButtonElement>) => {
     e.preventDefault();
-    console.log(
-      "take the onChange value stored in local state and route to results"
-    );
+
     console.log(name);
-    router.push({
+    Router.push({
       pathname: "/results",
-      query: name,
+      query: { name },
     });
   };
   return (
