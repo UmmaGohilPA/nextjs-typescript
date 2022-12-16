@@ -41,7 +41,8 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 <s>- Create results component</s>
 
-- Program the form to handle the data
+- set up dummy data via state in form to show input text on the results page (props)
+- Program the form to handle the data from data file
 - Route the form to go to a result page
 - Display some data on the result page
 - Styling
