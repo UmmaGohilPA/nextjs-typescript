@@ -36,7 +36,9 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 ## TO DO
 
 <s>- Create a Form component with a label, field and button</s>
+
 <s>- Create a dummy data file</s>
+
 <s>- Create results component</s>
 
 - Program the form to handle the data
