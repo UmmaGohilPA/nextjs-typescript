@@ -40,6 +40,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 - Program the form to handle the data
 - Route the form to go to a result page
 - Display some data on the result page
+- Styling
 - Add unit testing
 - Look at props/types/typescript best practises
 - Documentation
