@@ -1,5 +1,5 @@
 import { useState, ChangeEvent, MouseEvent } from "react";
-import Router, { useRouter } from "next/router";
+import { useRouter } from "next/router";
 
 const Form = () => {
   const router = useRouter();
@@ -10,6 +10,7 @@ const Form = () => {
       "input change to be stored in local state and sent to results component"
     );
     setName(e.target.value);
+    console.log(name);
   };
 
   const onClick = (e: MouseEvent<HTMLButtonElement>) => {
@@ -17,13 +18,16 @@ const Form = () => {
     console.log(
       "take the onChange value stored in local state and route to results"
     );
-    router.push("/results");
+    console.log(name);
+    router.push({
+      pathname: "/results",
+      query: name,
+    });
   };
   return (
     <div>
       <label>Name:</label>
       <input onChange={onChange} />
-
       <button onClick={onClick}>submit</button>
     </div>
   );
